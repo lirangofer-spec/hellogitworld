@@ -1,4 +1,4 @@
-import unittest
+from unittest import TestCase
 import logging
 logging.basicConfig(filename="log.txt", level=logging.DEBUG, format="%(asctime)s %(message)s")
 
@@ -9,7 +9,7 @@ README_added_text = 'Added text for example\n'
 Text_file_text = 'Example for a test file'
 
 
-class MyTestCase(unittest.TestCase):
+class TestValidations(TestCase):
 
     def test_README_file(self):
         try:
